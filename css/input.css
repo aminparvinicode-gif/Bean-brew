@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "vazirmatn";
+  src: url(../assets/fonts/Vazirmatn/Vazirmatn-Regular.ttf);
+}
+
+@layer components {
+  .btn-primary {
+    @apply flex items-center justify-center gap-2
+        bg-coffee-caramel text-white
+        px-6 py-3 rounded-xl
+        font-vazirmatn text-base
+        hover:bg-coffee-dark 
+        active:scale-95
+        transition-all duration-300
+        shadow-lg hover:shadow-xl;
+  }
+  .btn-secondery {
+    @apply inline-flex items-center justify-center gap-2
+        bg-transparent text-coffee-caramel
+        border-2 border-coffee-caramel
+        px-6 py-3 rounded-xl
+        font-vazirmatn text-base
+        hover:bg-coffee-caramel hover:text-white
+        active: scale-95
+        transition-all duration-300;
+  }
+  .card-product {
+    @apply bg-white rounded-2xl
+        shadow-md hover:shadow-2xl
+        overflow-hidden
+        transition-all duration-500
+        hover:translate-y-2 
+        border border-coffee-cream;
+  }
+  .form-input {
+    @apply w-full
+        px-4 py-3
+        bg-white
+        border-2 border-coffee-cream
+        rounded-xl
+        text-coffee-dark
+        placeholder: text coffee dark/50
+        focus:outline-none focus:border-coffee-caramel 
+        transition-colors duration-300;
+  }
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-coffee-cream text-coffee-dark font-vazirmatn;
+    }
+}

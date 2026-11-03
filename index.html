@@ -94,30 +94,142 @@
       </div>
     </header>
 
-    <div id="mobile-menu" class="fixed right-0 z-50 w-64 bg-white shadow-2xl transform translate-x-full
-    transition-transform duration-300 ease-in-out md:hidden lg:hidden">
-      <div class="flex flex-col h-full p-6" >
+    <div
+      id="mobile-menu"
+      class="fixed right-0 z-50 w-64 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden lg:hidden"
+    >
+      <div class="flex flex-col h-full p-6">
         <div class="flex items-center justify-between mb-8">
           <span class="text-xl font-bold text-coffee-dark">منو</span>
-          <button id="close-menu-btn" class="p-2 text-coffee-caramel hover:text-coffee-dark transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
+          <button
+            id="close-menu-btn"
+            class="p-2 text-coffee-caramel hover:text-coffee-dark transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
           </button>
         </div>
         <nav class="flex flex-col gap-6">
-          <a href="#" class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors">صفحه اصلی </a>
-          <a href="#" class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors">فروشگاه</a>
-          <a href="#" class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors">درباره ما</a>
-          <a href="#" class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors">تماس با ما</a>
+          <a
+            href="#"
+            class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors"
+            >صفحه اصلی
+          </a>
+          <a
+            href="#"
+            class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors"
+            >فروشگاه</a
+          >
+          <a
+            href="#"
+            class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors"
+            >درباره ما</a
+          >
+          <a
+            href="#"
+            class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors"
+            >تماس با ما</a
+          >
         </nav>
       </div>
     </div>
-    <div id="menu-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 hidden md:hidden transition-opacity
-    duration-300 opacity-0"></div>
-    <div class="h-[200vh] p-8">
-      <h1 class="text-3xl font-bold mt-10">محتوای صفحه اینجا قرار میگیره</h1>
-    </div>
+    <div
+      id="menu-backdrop"
+      class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 hidden md:hidden transition-opacity duration-300 opacity-0"
+    ></div>
+
+    <section
+      id="hero"
+      class="relative w-full h-[90vh] flex items-center overflow-hidden"
+    >
+      <div class="absolute inset-0 w-full h-full">
+        <img
+          src="./assets/images/hero-cafe.jpg"
+          alt="فضای کافه Bean & Brew"
+          class="w-full h-full object-cover object-center scale-105 animate-slow-zoom"
+        />
+        <div class="absolute inset-0 bg-coffee-dark/60"></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-coffee-cream via-transparent to-transparent"
+        ></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="max-w-2xl text-center md:text-right">
+          <span
+            class="inline-block py-1 px-3 rounded-full bg-coffee-caramel/20 text-coffee-accent text-sm font-bold tracking-wider mb-6 animate-fade-in-up border border-coffee-accent/30"
+            >از مزرعه تا فنجان</span
+          >
+          <h1
+            class="text-4xl md:text-6xl font-bold text-white leadind-tight mb-6 animate-fade-in animation-delay-100"
+          >
+            <br class="hidden md:block" />
+            قهوه ای که
+            <span class="text-coffee-accent">داستان</span>
+            میگه
+          </h1>
+          <p>
+            تجربه ای متفاوت از طعم قهوه های تازه درست شده و ابزار آلات تخصصی
+            باریستا. همین حالا کافه مارا کشف کنید.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in-up animation-delay-300"
+          >
+            <a href="#products" class="btn-primary"
+              >مشاهده منو
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                /></svg
+            ></a>
+            <a
+              href="#about"
+              class="bg-white/10 backdrop-blur-md text-white border border-white/20 hover:bg-white/20 font-bold px-6 py-3 rounded-xl transition-all duration-300 items-center justify-center gap-2"
+            >
+              درباره ما</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-8 left-1/2 translate-x-1/2 z-10 text-white/70 animate-bounce-slow hidden md:block">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="w-8 h-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </div>
+    </section>
     <script src="./js/main.js"></script>
   </body>
 </html>

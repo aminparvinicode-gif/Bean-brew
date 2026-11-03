@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.getElementById("mobile-menu");
   const menuBackdrop = document.getElementById("menu-backdrop");
   const navbar = document.getElementById("navbar");
+  const backToTopBtn = document.getElementById('back-to-top');
 
   function openMenu() {
     mobileMenu.classList.remove("translate-x-full");
@@ -42,6 +43,23 @@ document.addEventListener("DOMContentLoaded", () => {
         navbar.classList.add('bg-coffee-cream/50');
         navbar.classList.remove('shadow-md' , 'bg-white/50')
     }
+  })
+
+  window.addEventListener('scroll' , () => {
+    if(window.scrollY > 300){
+      backToTopBtn.classList.remove('opacity-0' , 'invisible');
+      backToTopBtn.classList.add('opacity-100' , 'visible');
+    }else {
+            backToTopBtn.classList.add('opacity-0', 'invisible');
+            backToTopBtn.classList.remove('opacity-100', 'visible');
+    }
+  })
+
+  backToTopBtn.addEventListener('click' , () =>{
+    window.scrollTo ({
+      top : 0,
+      behavior : "smooth"
+    })
   })
 
 });

@@ -6,15 +6,118 @@
     <title>Bean & Brew</title>
     <link rel="stylesheet" href="./css/output.css" />
   </head>
-  <body>
-    <div class="text-center mt-[30px]">
-      <h1 class="text-5xl font-bold text-amber-900 mb-4">☕ Bean & Brew</h1>
-      <p class="text-lg text-amber-700 mb-8">قهوه‌ای که داستان می‌گه</p>
-      <button
-        class="bg-amber-900 hover:bg-amber-800 text-white px-8 py-3 rounded-lg transition-colors duration-300"
-      >
-        شروع کنید
-      </button>
+  <body
+    class="bg-coffee-cream text-coffee-dark font-vazirmatn antialiased overflow-x-hidden"
+  >
+    <header
+      id="navbar"
+      class="sticky top-0 z-50 w-full transition-all duration-300 bg-coffee-cream/50 backdrop-blur-md border-b border-coffee-caramel/20"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:ml-[20px]">
+        <div class="flex items-center justify-between h-20">
+          <a href="#" class="flex items-center gap-2 group">
+            <div
+              class="w-10 h-10 text-coffee-caramel group-hover:text-coffee-dark transition-colors duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-full h-full"
+              >
+                <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+                <line x1="6" y1="2" x2="6" y2="4"></line>
+                <line x1="10" y1="2" x2="10" y2="4"></line>
+                <line x1="14" y1="2" x2="14" y2="4"></line>
+              </svg>
+            </div>
+            <span class="text-2xl font-bold tracking-tight">Bean & Brew</span>
+          </a>
+          <nav class="md:flex items-center hidden gap-8">
+            <a href="#" class="navbar_items">صفحه اصلی </a>
+            <a href="#" class="navbar_items">فروشگاه</a>
+            <a href="#" class="navbar_items">درباره ما</a>
+            <a href="#" class="navbar_items">تماس با ما</a>
+          </nav>
+          <div class="flex items-center gap-4">
+            <button
+              class="relative p-2 text-coffee-dark hover:text-coffee-caramel transition-colors duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              <span
+                id="cart-badge"
+                class="absolute top-0 right-0 flex items-center justify-center px-1.5 py-0.5 text-[10px]"
+                font-bold
+                leading-none
+                text-white
+                bg-coffee-accent
+                rounded-full
+                >0</span
+              >
+            </button>
+            <button id="mobile-menu-btn" class="md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed right-0 z-50 w-64 bg-white shadow-2xl transform translate-x-full
+    transition-transform duration-300 ease-in-out md:hidden lg:hidden">
+      <div class="flex flex-col h-full p-6" >
+        <div class="flex items-center justify-between mb-8">
+          <span class="text-xl font-bold text-coffee-dark">منو</span>
+          <button id="close-menu-btn" class="p-2 text-coffee-caramel hover:text-coffee-dark transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+          </button>
+        </div>
+        <nav class="flex flex-col gap-6">
+          <a href="#" class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors">صفحه اصلی </a>
+          <a href="#" class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors">فروشگاه</a>
+          <a href="#" class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors">درباره ما</a>
+          <a href="#" class="text-lg font-bold text-coffee-dark hover:text-coffee-caramel transition-colors">تماس با ما</a>
+        </nav>
+      </div>
     </div>
+    <div id="menu-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 hidden md:hidden transition-opacity
+    duration-300 opacity-0"></div>
+    <div class="h-[200vh] p-8">
+      <h1 class="text-3xl font-bold mt-10">محتوای صفحه اینجا قرار میگیره</h1>
+    </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>

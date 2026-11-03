@@ -28,7 +28,7 @@
         active: scale-95
         transition-all duration-300;
   }
-  .card-product {
+  .cart-product {
     @apply bg-white rounded-2xl
         shadow-md hover:shadow-2xl
         overflow-hidden

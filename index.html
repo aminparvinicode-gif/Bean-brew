@@ -213,7 +213,9 @@
         </div>
       </div>
 
-      <div class="absolute bottom-8 left-1/2 translate-x-1/2 z-10 text-white/70 animate-bounce-slow hidden md:block">
+      <div
+        class="absolute bottom-8 left-1/2 translate-x-1/2 z-10 text-white/70 animate-bounce-slow hidden md:block"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -230,6 +232,349 @@
         </svg>
       </div>
     </section>
+
+    <section id="products" class="py-20 bg-coffee-cream relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4"
+        >
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-coffee-dark mb-2">
+              محصولات ما
+            </h2>
+            <p class="text-coffee-caramel text-lg">
+              تازه‌ترین قهوه‌ها و ابزارآلات باریستا
+            </p>
+          </div>
+          <a
+            href="#"
+            class="text-coffee-caramel font-bold hover:text-coffee-dark transition-colors border-b-2 border-coffee-caramel pb-1"
+          >
+            مشاهده همه محصولات
+          </a>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8"
+        >
+          <!-- کارت محصول 1 -->
+          <div class="cart-product group relative flex flex-col">
+            <div class="relative overflow-hidden aspect-square bg-white">
+              <img
+                src="./assets/images/images (1).jpg"
+                alt="قهوه تست"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+
+              <span
+                class="absolute top-3 right-3 bg-coffee-accent text-coffee-dark text-xs font-bold px-3 py-1 rounded-full shadow-sm z-10"
+              >
+                قابلیت خرید عمده
+              </span>
+
+              <button
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] bg-coffee-dark/90 text-white backdrop-blur-md py-3 rounded-xl font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-coffee-caramel flex items-center justify-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+
+            <div class="p-5 flex flex-col flex-grow">
+              <div class="flex justify-between items-start mb-2">
+                <h3
+                  class="text-lg font-bold text-coffee-dark group-hover:text-coffee-caramel transition-colors"
+                >
+                  قهوه اسپشیالتی
+                </h3>
+
+                <div class="flex items-center gap-1 text-coffee-accent text-sm">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="font-bold text-coffee-dark/70">4.8</span>
+                </div>
+              </div>
+
+              <p class="text-sm text-coffee-caramel/80 mb-4 flex-grow">
+                ترکیب ۷۰٪ عربیکا و ۳۰٪ روبوستا با رست متوسط
+              </p>
+
+              <div
+                class="flex items-end justify-between mt-auto pt-4 border-t border-coffee-cream"
+              >
+                <div>
+                  <span class="text-xs text-coffee-caramel/60 block mb-1"
+                    >قیمت تک:</span
+                  >
+                  <span class="text-xl font-bold text-coffee-dark"
+                    >۲۸۰,۰۰۰
+                    <span class="text-sm font-normal">تومان</span></span
+                  >
+                </div>
+                <button
+                  class="w-10 h-10 rounded-full bg-coffee-cream text-coffee-dark flex items-center justify-center hover:bg-coffee-caramel hover:text-white transition-colors duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- کارت محصول ۲ -->
+          <div class="cart-product group relative flex flex-col">
+            <div class="relative overflow-hidden aspect-square bg-white">
+              <img
+                src="./assets/images/images (2).jpg"
+                alt="قهوه تست"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <span
+                class="absolute top-3 right-3 bg-coffee-accent text-coffee-dark text-xs font-bold px-3 py-1 rounded-full shadow-sm z-10"
+                >قابلیت خرید عمده</span
+              >
+              <button
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] bg-coffee-dark/90 text-white backdrop-blur-md py-3 rounded-xl font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-coffee-caramel flex items-center justify-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <h3
+                class="text-lg font-bold text-coffee-dark group-hover:text-coffee-caramel transition-colors mb-2"
+              >
+                کاپوچینو فوری
+              </h3>
+              <p class="text-sm text-coffee-caramel/80 mb-4 flex-grow">
+                کاپوچینو فوری با شکر، مناسب برای مصرف روزانه
+              </p>
+              <div
+                class="flex items-end justify-between mt-auto pt-4 border-t border-coffee-cream"
+              >
+                <div>
+                  <span class="text-xs text-coffee-caramel/60 block mb-1"
+                    >قیمت تک:</span
+                  ><span class="text-xl font-bold text-coffee-dark"
+                    >۸۵,۰۰۰ <span class="text-sm font-normal">تومان</span></span
+                  >
+                </div>
+                <button
+                  class="w-10 h-10 rounded-full bg-coffee-cream text-coffee-dark flex items-center justify-center hover:bg-coffee-caramel hover:text-white transition-colors duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- کارت محصول ۳ -->
+          <div class="cart-product group relative flex flex-col">
+            <div class="relative overflow-hidden aspect-square bg-white">
+              <img
+                src="./assets/images/IMG_2875-300x300.jpg"
+                alt="قهوه تست"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <button
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] bg-coffee-dark/90 text-white backdrop-blur-md py-3 rounded-xl font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-coffee-caramel flex items-center justify-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <h3
+                class="text-lg font-bold text-coffee-dark group-hover:text-coffee-caramel transition-colors mb-2"
+              >
+                تمپر چوبی
+              </h3>
+              <p class="text-sm text-coffee-caramel/80 mb-4 flex-grow">
+                تمپر چوبی حرفه‌ای برای فشرده‌سازی قهوه
+              </p>
+              <div
+                class="flex items-end justify-between mt-auto pt-4 border-t border-coffee-cream"
+              >
+                <div>
+                  <span class="text-xs text-coffee-caramel/60 block mb-1"
+                    >قیمت تک:</span
+                  ><span class="text-xl font-bold text-coffee-dark"
+                    >۶۵۰,۰۰۰
+                    <span class="text-sm font-normal">تومان</span></span
+                  >
+                </div>
+                <button
+                  class="w-10 h-10 rounded-full bg-coffee-cream text-coffee-dark flex items-center justify-center hover:bg-coffee-caramel hover:text-white transition-colors duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- کارت محصول ۴ -->
+          <div class="cart-product group relative flex flex-col">
+            <div class="relative overflow-hidden aspect-square bg-white">
+              <img
+                src="./assets/images/images (13).jpg"
+                alt="قهوه تست"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <span
+                class="absolute top-3 right-3 bg-coffee-accent text-coffee-dark text-xs font-bold px-3 py-1 rounded-full shadow-sm z-10"
+                >قابلیت خرید عمده</span
+              >
+              <button
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] bg-coffee-dark/90 text-white backdrop-blur-md py-3 rounded-xl font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-coffee-caramel flex items-center justify-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+                افزودن به سبد
+              </button>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <h3
+                class="text-lg font-bold text-coffee-dark group-hover:text-coffee-caramel transition-colors mb-2"
+              >
+                کیک هویج
+              </h3>
+              <p class="text-sm text-coffee-caramel/80 mb-4 flex-grow">
+                کیک هویج تازه با فراستینگ پنیر خامه‌ای
+              </p>
+              <div
+                class="flex items-end justify-between mt-auto pt-4 border-t border-coffee-cream"
+              >
+                <div>
+                  <span class="text-xs text-coffee-caramel/60 block mb-1"
+                    >قیمت تک:</span
+                  ><span class="text-xl font-bold text-coffee-dark"
+                    >۸۵,۰۰۰ <span class="text-sm font-normal">تومان</span></span
+                  >
+                </div>
+                <button
+                  class="w-10 h-10 rounded-full bg-coffee-cream text-coffee-dark flex items-center justify-center hover:bg-coffee-caramel hover:text-white transition-colors duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="./js/main.js"></script>
   </body>
 </html>

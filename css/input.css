@@ -47,13 +47,19 @@
         focus:outline-none focus:border-coffee-caramel 
         transition-colors duration-300;
   }
+  .navbar_items {
+    @apply text-sm font-bold
+        text-coffee-dark
+        hover:text-coffee-caramel
+        transition-colors duration-300;
+  }
 }
 
 @layer base {
-    html {
-        scroll-behavior: smooth;
-    }
-    body {
-        @apply bg-coffee-cream text-coffee-dark font-vazirmatn;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-coffee-cream text-coffee-dark font-vazirmatn;
+  }
 }

@@ -18,6 +18,13 @@
         transition-all duration-300
         shadow-lg hover:shadow-xl;
   }
+.filter-btn {
+  @apply px-4 py-2 text-[13px] font-bold rounded-full transition-all duration-300 bg-coffee-cream text-coffee-dark hover:bg-coffee-caramel hover:text-white;
+}
+
+.filter-btn.active {
+  @apply bg-coffee-dark text-white;
+}
   .btn-secondery {
     @apply inline-flex items-center justify-center gap-2
         bg-transparent text-coffee-caramel
@@ -28,23 +35,23 @@
         active: scale-95
         transition-all duration-300;
   }
-  .cart-product {
-    @apply bg-white rounded-2xl
-        shadow-md hover:shadow-2xl
-        overflow-hidden
-        transition-all duration-500
-        hover:translate-y-2 
-        border border-coffee-cream;
-  }
+.cart-product {
+  @apply bg-white rounded-2xl shadow-md 
+  hover:shadow-2xl 
+  overflow-hidden transition-all
+   duration-500 
+   hover:-translate-y-2 
+   border border-coffee-cream
+    flex flex-col
+    animate-load-product;
+}
   .form-input {
     @apply w-full
         px-4 py-3
         bg-white
-        border-2 border-coffee-cream
         rounded-xl
         text-coffee-dark
-        placeholder: text coffee dark/50
-        focus:outline-none focus:border-coffee-caramel 
+        placeholder:text-coffee-dark/50
         transition-colors duration-300;
   }
   .navbar_items {
@@ -73,7 +80,7 @@
   }
 }
 
-.animate-slow-zoom{
+.animate-slow-zoom {
   animation: slowZoom 20s ease-in-out infinite alternate;
 }
 
@@ -88,10 +95,17 @@
   }
 }
 
-.animate-fade-in-up{
+.animate-fade-in-up {
   animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.animation-delay-100 { animation-delay: 100ms; }
-.animation-delay-200 { animation-delay: 200ms; }
-.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+

@@ -19,7 +19,8 @@ module.exports = {
       animation: {
         'fade-in' : 'fadeIn 0.5s ease-in-out',
         'slide-up' : 'slideUp 0.4s ease-out',
-        'bounce-slow' : 'bounce 2s infinite'
+        'bounce-slow' : 'bounce 2s infinite',
+        'load-product' : 'loadProduct 0.5s ease'
       },
       keyframes: {
         fadeIn: {
@@ -30,6 +31,15 @@ module.exports = {
           "0%": { opacity: "0", transform: "translateY(20px)" },
           "100%": { opacity: "1", transform: "translateY(0px)" },
         },
+        loadProduct:{ 
+          '0%' : {
+           opacity: "0",
+          },
+          '100%' : {
+          opacity: "1" ,
+         },
+        },
+         
       },
     },
   },

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تکمیل سفارش | Bean & Brew</title>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./css/output.css">
+</head>
+<body class="bg-coffee-cream text-coffee-dark font-sans antialiased overflow-x-hidden flex flex-col min-h-screen">
+
+<header
+      id="navbar"
+      class="sticky top-0 z-50 w-full transition-all duration-300 bg-coffee-cream/50 backdrop-blur-md border-b border-coffee-caramel/20"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:ml-[20px]">
+        <div class="flex items-center justify-between h-20">
+          <a href="#" class="flex items-center gap-2 group">
+            <div
+              class="w-10 h-10 text-coffee-caramel group-hover:text-coffee-dark transition-colors duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-full h-full"
+              >
+                <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+                <line x1="6" y1="2" x2="6" y2="4"></line>
+                <line x1="10" y1="2" x2="10" y2="4"></line>
+                <line x1="14" y1="2" x2="14" y2="4"></line>
+              </svg>
+            </div>
+            <span class="text-2xl font-bold tracking-tight">Bean & Brew</span>
+          </a>
+          <nav class="md:flex items-center hidden gap-8">
+            <a href="./index.html" class="navbar_items">صفحه اصلی </a>
+            <a href="shop.html" class="navbar_items">فروشگاه</a>
+            <a href="#" class="navbar_items">درباره ما</a>
+            <a href="#" class="navbar_items">تماس با ما</a>
+          </nav>
+          <div class="flex items-center gap-4">
+             <button id="mobile-menu-btn" class="md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+    
+    <h1 class="text-3xl font-bold text-coffee-dark mb-8">تکمیل سفارش</h1>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <div class="lg:col-span-2 bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-coffee-cream">
+        <h2 class="text-xl font-bold text-coffee-dark mb-6 border-b border-coffee-cream pb-4">اطلاعات ارسال</h2>
+        
+        <form id="checkout-form" class="space-y-5">
+          <div>
+            <label class="block text-sm font-bold text-coffee-dark mb-2">نام و نام خانوادگی <span class="text-red-500">*</span></label>
+            <input type="text" required placeholder="مثلاً: علی رضایی" class="form-input">
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-coffee-dark mb-2">شماره تماس <span class="text-red-500">*</span></label>
+            <input type="tel" required placeholder="۰۹۱۲۳۴۵۶۷۸۹" class="form-input text-left" dir="ltr">
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-coffee-dark mb-2">آدرس دقیق پستی <span class="text-red-500">*</span></label>
+            <textarea required rows="3" placeholder="استان، شهر، خیابان، کوچه، پلاک..." class="form-input resize-none"></textarea>
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-coffee-dark mb-2">یادداشت (اختیاری)</label>
+            <textarea rows="2" placeholder="مثلاً: قهوه آسیاب نشده باشد." class="form-input resize-none"></textarea>
+          </div>
+
+          <div class="pt-4 border-t border-coffee-cream">
+            <h3 class="text-sm font-bold text-coffee-dark mb-3">روش پرداخت</h3>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 p-3 border-2 border-coffee-cream
+               hover:border-coffee-caramel hover:bg-coffee-cream/50 transition-all duration-300 bg-white rounded-xl cursor-pointer">
+                <input type="radio" name="payment" checked class="w-4 h-4 accent-coffee-caramel">
+                <span class="font-bold text-sm">پرداخت آنلاین (درگاه بانکی)</span>
+            </div>
+              <div class="flex items-center gap-3 p-3 border-2 border-coffee-cream
+               hover:border-coffee-caramel hover:bg-coffee-cream/50 transition-all duration-300 bg-white rounded-xl cursor-pointer">
+                <input type="radio" name="payment" class="w-4 h-4 accent-coffee-caramel">
+                <span class="font-bold text-sm">پرداخت در محل (هنگام تحویل)</span>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary w-full py-4 mt-6 text-lg">
+            ثبت نهایی سفارش
+          </button>
+        </form>
+      </div>
+
+
+      <div class="lg:col-span-1">
+        <div class="bg-white rounded-2xl p-6 shadow-md border border-coffee-cream sticky top-24">
+          <h2 class="text-xl font-bold text-coffee-dark mb-6 border-b border-coffee-cream pb-4">سفارش شما</h2>
+          
+
+          <div class="space-y-4 mb-6 max-h-60 overflow-y-auto pr-2">
+            <div class="flex justify-between items-center text-sm">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 bg-coffee-cream rounded-md flex items-center justify-center text-xs font-bold">۲</span>
+                <span class="text-coffee-dark/80">قهوه گریفون پاوا</span>
+              </div>
+              <span class="font-bold">۵۶۰,۰۰۰</span>
+            </div>
+            <div class="flex justify-between items-center text-sm">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 bg-coffee-cream rounded-md flex items-center justify-center text-xs font-bold">۱</span>
+                <span class="text-coffee-dark/80">تمپر چوبی</span>
+              </div>
+              <span class="font-bold">۶۵۰,۰۰۰</span>
+            </div>
+          </div>
+
+          <div class="border-t border-coffee-cream pt-4 space-y-3 text-sm text-coffee-dark/80">
+            <div class="flex justify-between">
+              <span>مجموع کالاها</span>
+              <span>۱,۲۱۰,۰۰۰ تومان</span>
+            </div>
+            <div class="flex justify-between">
+              <span>هزینه ارسال</span>
+              <span>۵۰,۰۰۰ تومان</span>
+            </div>
+          </div>
+
+          <div class="border-t border-coffee-cream mt-4 pt-4 flex justify-between items-center font-bold text-lg text-coffee-dark">
+            <span>مبلغ قابل پرداخت</span>
+            <span>۱,۲۶۰,۰۰۰ <span class="text-sm font-normal">تومان</span></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+      <footer class="w-full h-auto lg:h-[350px] bg-coffee-dark flex flex-col">
+      <div
+        class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:items-start lg:py-12"
+      >
+        <div class="space-y-4">
+          <a href="#" class="group flex items-center gap-2">
+            <span class="text-2xl font-bold tracking-tight text-white"
+              >Bean & Brew</span
+            >
+          </a>
+
+          <p class="text-coffee-cream leading-7">
+            قهوه ای که داستان میگه. ما تازه ترین دانه قهوه و بهترین ابزارآلات را
+            برای شما فراهم می کنیم.
+          </p>
+
+          <div class="flex items-center gap-3">
+            <a
+              href="#"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-coffee-caramel"
+            >
+              <img
+                src="./assets/icons/instagram.svg"
+                class="w-1/2"
+                alt="instagram"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-coffee-caramel"
+            >
+              <img
+                src="./assets/icons/telegram.svg"
+                class="w-1/2"
+                alt="telegram"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-coffee-caramel"
+            >
+              <img
+                src="./assets/icons/whatsapp.svg"
+                class="w-1/2"
+                alt="whatsapp"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-white">لینک های سریع</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >صفحه اصلی</a
+              >
+            </li>
+            <li>
+              <a
+                href="#products"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >فروشگاه</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >درباره ما</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >تماس با ما</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-white">دسته بندی ها</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >قهوه دانه و آسیاب</a
+              >
+            </li>
+            <li>
+              <a
+                href="#products"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >نسکافه و نوشیدنی فوری</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >ابزارآلات باریستا</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >دسر و شیرینی</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-white">اطلاعات تماس</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >تهران خیابان ولیعصر پلاک 123</a
+              >
+            </li>
+            <li>
+              <a
+                href="#products"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >۰۲۱-۱۲۳۴۵۶۷۸</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >info@beanandbrew.ir</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col text-[10px] justify-between text-coffee-cream/50 px-5 w-[80%] lg:flex-row lg:text-sm space-y-4 mb-[7px]"
+      >
+        <p>2026 کافه Bean & Brew . تمامی حقوق محفوظ است ©</p>
+        <p>طراحی و توسعه با ❤️</p>
+      </div>
+    </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>

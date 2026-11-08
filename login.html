@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود به پنل مدیریت | Bean & Brew</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="flex justify-center items-center h-[100vh]">
+    <div
+      class="bg-white rounded-xl p-4 rounded-xl w-[90%] sm:w-[50%] lg:w-[35%] m-[10px] flex flex-col items-center justify-center"
+    >
+      <div class="text-center mb-8 my-7">
+        <div
+          class="w-16 h-16 bg-coffee-caramel text-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
+            />
+          </svg>
+        </div>
+        <h1 class="text-2xl font-bold text-coffee-dark">پنل مدیریت</h1>
+        <p class="text-coffee-caramel text-sm mt-2">
+          لطفاً اطلاعات خود را وارد کنید
+        </p>
+      </div>
+      <form
+        id="login-form"
+        class="flex flex-col items-center justify-center w-full gap-2"
+      >
+        <div class="flex flex-col gap-3 w-full justify-center items-center">
+          <label class="text-center font-bold self-end mr-[13px]"
+            >نام کاربری</label
+          >
+          <input
+          maxlength="20"
+            type="text"
+            class="w-[90%] h-[55px] outline-none border-2 border-coffee-cream focus:ring-4 focus:ring-coffee-caramel/50 rounded-[15px] transition-all duration-300 p-4 placeholder:text-coffee-caramel/50"
+            placeholder="admin"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-3 w-full justify-center items-center my-4"
+        >
+          <label class="text-center font-bold self-end mr-[13px]"
+            >رمز عبور</label
+          >
+          <input
+          maxlength="20"
+            type="text"
+            class="w-[90%] h-[55px] outline-none border-2 border-coffee-cream focus:ring-4 focus:ring-coffee-caramel/50 rounded-[15px] transition-all duration-300 p-4 placeholder:text-coffee-caramel/50"
+            placeholder="123"
+          />
+        </div>
+
+        <button class="btn-primary w-[90%]">ورود به پنل</button>
+      </form>
+
+      <div
+        class="w-[90%] mt-8 text-center bg-coffee-cream/50 p-3 rounded-xl border border-coffee-cream mb-[20px]"
+      >
+        <p class="text-xs text-coffee-dark/60">برای تست (دمو):</p>
+        <p class="text-sm font-bold text-coffee-dark mt-1">
+          نام کاربری: <span class="text-coffee-caramel">admin</span> | رمز:
+          <span class="text-coffee-caramel">1234</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  const isLoggedIn = sessionStorage.getItem("isAdminLoggedIn");
+  
+  if(!isLoggedIn){
+    window.location.href = "../login.html"
+  }
+
   const sidebar = document.getElementById("sidebar");
   const openBtn = document.getElementById("open-sidebar");
   const closeBtn = document.getElementById("close-sidebar");
@@ -7,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeModalBtn = document.getElementById("close-modal-btn");
   const cancelModalBtn = document.getElementById("cancel-modal-btn");
   const productModal = document.getElementById("product-modal");
-
+ 
   function openSidebar() {
     sidebar.classList.remove("translate-x-full");
     sidebar.classList.add("translate-x-0");
@@ -41,5 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
         closeModal();
       }
     });
+  }
+
+  const logoutBtn = document.getElementById("logout-btn");
+
+  if(logoutBtn){
+    logoutBtn.addEventListener('click' , (e) => {
+      e.preventDefault();
+      sessionStorage.removeItem("isAdminLoggedIn");
+      window.location.href = "../login.html"
+    })
   }
 });

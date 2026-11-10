@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const productCards = document.querySelectorAll(
     "#products-grid .cart-product",
   );
+
   const emptyState = document.getElementById("empty-state");
 
   function filterProducts() {

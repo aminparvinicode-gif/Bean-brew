@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>جزئیات محصول | Bean & Brew</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body
+    class="bg-coffee-cream text-coffee-dark font-sans antialiased overflow-x-hidden flex flex-col min-h-screen"
+  >
+    <header
+      id="navbar"
+      class="sticky top-0 z-50 w-full transition-all duration-300 bg-coffee-cream/90 backdrop-blur-md border-b border-coffee-caramel/20"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="./index.html" class="flex items-center gap-2 group">
+            <div
+              class="w-10 h-10 text-coffee-caramel group-hover:text-coffee-dark transition-colors duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-full h-full"
+              >
+                <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+                <line x1="6" y1="2" x2="6" y2="4"></line>
+                <line x1="10" y1="2" x2="10" y2="4"></line>
+                <line x1="14" y1="2" x2="14" y2="4"></line>
+              </svg>
+            </div>
+            <span class="text-2xl font-bold tracking-tight">Bean & Brew</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              href="./index.html"
+              class="text-sm font-bold hover:text-coffee-caramel transition-colors"
+              >صفحه اصلی</a
+            >
+            <a
+              href="./shop.html"
+              class="text-sm font-bold hover:text-coffee-caramel transition-colors"
+              >فروشگاه</a
+            >
+          </nav>
+          <a
+            href="./cart.html"
+            class="relative p-2 text-coffee-dark hover:text-coffee-caramel transition-colors duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+            <span
+              id="cart-badge"
+              class="absolute top-0 right-0 inline-flex items-center justify-center px-1.5 py-0.5 text-[10px] font-bold leading-none text-white bg-coffee-accent rounded-full translate-x-1/4 -translate-y-1/4"
+              >0</span
+            >
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+      <div class="text-sm text-coffee-caramel/70 mb-6 flex items-center gap-2">
+        <a href="./index.html" class="hover:text-coffee-dark transition-colors"
+          >صفحه اصلی</a
+        >
+        <span>/</span>
+        <a href="./shop.html" class="hover:text-coffee-dark transition-colors"
+          >فروشگاه</a
+        >
+        <span>/</span>
+        <span class="text-coffee-dark font-bold">قهوه گریفون پاوا</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+        <div class="space-y-4">
+          <div
+            class="bg-white rounded-3xl p-4 shadow-sm border border-coffee-cream overflow-hidden group"
+          >
+            <img
+              id="main-image"
+              src="./assets/images/images (9).jpg"
+              alt="قهوه"
+              class="w-full h-auto md:h-[500px] object-contain rounded-2xl transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+
+          <div class="grid grid-cols-4 gap-3">
+            <div
+              class="bg-white rounded-xl p-2 shadow-sm border-2 hover:border-coffee-caramel/50 cursor-pointer"
+            >
+              <img
+                
+                src="./assets/images/images (9).jpg"
+                alt="عکس ۱"
+                class="w-full h-20 object-contain"
+              />
+            </div>
+            <div
+              class="bg-white rounded-xl p-2 shadow-sm border-2 border-transparent hover:border-coffee-caramel/50 transition-colors cursor-pointer"
+            >
+              <img
+                src="./assets/images/images (2).jpg"
+                alt="عکس ۲"
+                class="w-full h-20 object-contain"
+              />
+            </div>
+            <div
+              class="bg-white rounded-xl p-2 shadow-sm border-2 border-transparent hover:border-coffee-caramel/50 transition-colors cursor-pointer"
+            >
+              <img
+                src="./assets/images/images (3).jpg"
+                alt="عکس ۳"
+                class="w-full h-20 object-contain"
+              />
+            </div>
+            <div
+              class="bg-white rounded-xl p-2 shadow-sm border-2 border-transparent hover:border-coffee-caramel/50 transition-colors cursor-pointer"
+            >
+              <img
+                src="./assets/images/images (4).jpg"
+                alt="عکس ۴"
+                class="w-full h-20 object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <div class="mb-2">
+            <span
+              class="bg-coffee-accent/20 text-coffee-dark text-xs font-bold px-3 py-1 rounded-full"
+              >قهوه</span
+            >
+            <span
+              class="bg-coffee-cream text-coffee-caramel text-xs font-bold px-3 py-1 rounded-full ml-2"
+              >قابلیت خرید عمده</span
+            >
+          </div>
+
+          <h1 class="text-3xl md:text-4xl font-bold text-coffee-dark mb-2 mt-3">
+            قهوه گریفون پاوا
+          </h1>
+
+          <div class="flex items-center gap-2 mb-6">
+            <div class="flex text-coffee-accent">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 text-gray-300"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <span class="text-sm font-bold text-coffee-dark/60"
+              >(۴.۸ از ۵ - ۲۴ نظر)</span
+            >
+          </div>
+
+          <p class="text-coffee-dark/70 leading-relaxed mb-8">
+            ترکیب ۶۰٪ عربیکا و ۴۰٪ روبوستا با رست متوسط. این قهوه با طعمی متعادل
+            و عطر بی‌نظیر، انتخابی عالی برای اسپرسو و قهوه‌های شیری است. دانه‌ها
+            به صورت تازه رست شده و در بسته‌بندی یک‌طرفه برای حفظ عطر بسته‌بندی
+            می‌شوند.
+          </p>
+
+          <div class="mb-8">
+            <h3 class="font-bold text-sm mb-3">انتخاب وزن:</h3>
+            <div class="flex gap-3">
+              <button
+                class="px-6 py-2 rounded-xl border-2 border-coffee-caramel bg-coffee-caramel text-white font-bold text-sm transition-colors"
+              >
+                ۲۵۰ گرم
+              </button>
+              <button
+                class="px-6 py-2 rounded-xl border-2 border-coffee-cream text-coffee-dark hover:border-coffee-caramel font-bold text-sm transition-colors"
+              >
+                ۵۰۰ گرم
+              </button>
+              <button
+                class="px-6 py-2 rounded-xl border-2 border-coffee-cream text-coffee-dark hover:border-coffee-caramel font-bold text-sm transition-colors"
+              >
+                ۱ کیلوگرم
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl p-6 shadow-md border border-coffee-cream mt-auto"
+          >
+            <div class="flex items-end justify-between mb-6">
+              <div>
+                <span class="text-sm text-coffee-caramel/70 block mb-1"
+                  >قیمت:</span
+                >
+                <span class="text-3xl font-bold text-coffee-dark"
+                  >۲۸۰,۰۰۰
+                  <span class="text-base font-normal">تومان</span></span
+                >
+              </div>
+
+              <div
+                class="flex items-center gap-3 bg-coffee-cream rounded-xl p-1"
+              >
+                <button
+                  class="w-10 h-10 flex items-center justify-center text-coffee-dark hover:bg-white rounded-lg transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 12h-15"
+                    />
+                  </svg>
+                </button>
+                <span class="font-bold w-8 text-center text-lg">۱</span>
+                <button
+                  class="w-10 h-10 flex items-center justify-center text-coffee-dark hover:bg-white rounded-lg transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 4.5v15m7.5-7.5h-15"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <button class="btn-primary w-full py-4 text-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              افزودن به سبد خرید
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mt-16 bg-white rounded-3xl shadow-sm border border-coffee-cream overflow-hidden"
+      >
+        <div class="flex border-b border-coffee-cream overflow-x-auto">
+          <button
+            class="px-8 py-4 font-bold text-coffee-dark border-b-2 border-coffee-caramel bg-coffee-cream/30 whitespace-nowrap"
+          >
+            توضیحات
+          </button>
+          <button
+            class="px-8 py-4 font-bold text-coffee-dark/50 hover:text-coffee-dark transition-colors whitespace-nowrap"
+          >
+            مشخصات
+          </button>
+          <button
+            class="px-8 py-4 font-bold text-coffee-dark/50 hover:text-coffee-dark transition-colors whitespace-nowrap"
+          >
+            نظرات (۲۴)
+          </button>
+        </div>
+        <div
+          class="p-6 md:p-8 text-coffee-dark/70 leading-relaxed text-sm md:text-base"
+        >
+          <p class="mb-4">
+            قهوه گریفون پاوا یکی از محبوب‌ترین ترکیب‌های قهوه در میان باریستاهای
+            حرفه‌ای است. این ترکیب با نسبت دقیق ۶۰ درصد عربیکا و ۴۰ درصد
+            روبوستا، طعمی متعادل با بدنه‌ای مخملی و کرمای عالی را ارائه می‌دهد.
+          </p>
+          <p>
+            دانه‌های این قهوه از بهترین مزارع آمریکای جنوبی و آفریقا تهیه شده و
+            به صورت تازه رست می‌شوند. مناسب برای دستگاه‌های اسپرسوساز خانگی و
+            صنعتی، فرنچ پرس و موکاپات.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-full h-auto lg:h-[350px] bg-coffee-dark flex flex-col">
+      <div
+        class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:items-start lg:py-12"
+      >
+        <div class="space-y-4">
+          <a href="#" class="group flex items-center gap-2">
+            <span class="text-2xl font-bold tracking-tight text-white"
+              >Bean & Brew</span
+            >
+          </a>
+
+          <p class="text-coffee-cream leading-7">
+            قهوه ای که داستان میگه. ما تازه ترین دانه قهوه و بهترین ابزارآلات را
+            برای شما فراهم می کنیم.
+          </p>
+
+          <div class="flex items-center gap-3">
+            <a
+              href="#"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-coffee-caramel"
+            >
+              <img
+                src="./assets/icons/instagram.svg"
+                class="w-1/2"
+                alt="instagram"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-coffee-caramel"
+            >
+              <img
+                src="./assets/icons/telegram.svg"
+                class="w-1/2"
+                alt="telegram"
+              />
+            </a>
+            <a
+              href="#"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-coffee-caramel"
+            >
+              <img
+                src="./assets/icons/whatsapp.svg"
+                class="w-1/2"
+                alt="whatsapp"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-white">لینک های سریع</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >صفحه اصلی</a
+              >
+            </li>
+            <li>
+              <a
+                href="#products"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >فروشگاه</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >درباره ما</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >تماس با ما</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-white">دسته بندی ها</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >قهوه دانه و آسیاب</a
+              >
+            </li>
+            <li>
+              <a
+                href="#products"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >نسکافه و نوشیدنی فوری</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >ابزارآلات باریستا</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >دسر و شیرینی</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-white">اطلاعات تماس</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >تهران خیابان ولیعصر پلاک 123</a
+              >
+            </li>
+            <li>
+              <a
+                href="#products"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >۰۲۱-۱۲۳۴۵۶۷۸</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-coffee-cream/50 transition-colors hover:text-white"
+                >info@beanandbrew.ir</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col text-[10px] justify-between text-coffee-cream/50 px-5 w-[80%] lg:flex-row lg:text-sm space-y-4 mb-[7px]"
+      >
+        <p>2026 کافه Bean & Brew . تمامی حقوق محفوظ است ©</p>
+        <p>طراحی و توسعه با ❤️</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

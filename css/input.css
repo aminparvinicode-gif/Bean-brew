@@ -52,7 +52,7 @@
         text-coffee-dark
         placeholder:text-coffee-dark/50
         transition-colors duration-300
-        border-[1px] border-coffee-cream;
+       /* border-[1px] border-coffee-cream*/;
   }
   .navbar_items {
     @apply text-sm font-bold

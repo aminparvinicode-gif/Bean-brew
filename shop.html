@@ -39,10 +39,10 @@
             <span class="text-2xl font-bold tracking-tight">Bean & Brew</span>
           </a>
           <nav class="md:flex items-center hidden gap-8">
-            <a href="index.html" class="navbar_items">صفحه اصلی </a>
-            <a href="#" class="navbar_items">فروشگاه</a>
-            <a href="#" class="navbar_items">درباره ما</a>
-            <a href="#" class="navbar_items">تماس با ما</a>
+            <a href="./index.html" class="navbar_items">صفحه اصلی </a>
+            <a href="./shop.html" class="navbar_items">فروشگاه</a>
+            <a href="./about.html" class="navbar_items">درباره ما</a>
+            <a href="./contact.html" class="navbar_items">تماس با ما</a>
           </nav>
           <button
             id="theme-toggle"
@@ -76,29 +76,29 @@
           <div class="flex items-center gap-4">
             <a href="cart.html">
               <button
-              class="relative p-2 text-coffee-dark hover:text-coffee-caramel transition-colors duration-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="w-6 h-6"
+                class="relative p-2 text-coffee-dark hover:text-coffee-caramel transition-colors duration-300"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                />
-              </svg>
-              <span
-                id="cart-badge"
-                class="absolute top-0 right-0 flex items-center justify-center px-1.5 py-0.5 text-[10px] font-bold leading-none text-white bg-coffee-accent rounded-full"
-                >0</span
-              >
-            </button>
-          </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+                <span
+                  id="cart-badge"
+                  class="absolute top-0 right-0 flex items-center justify-center px-1.5 py-0.5 text-[10px] font-bold leading-none text-white bg-coffee-accent rounded-full"
+                  >0</span
+                >
+              </button>
+            </a>
             <button id="mobile-menu-btn" class="md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -131,36 +131,11 @@
         class="bg-white rounded-2xl shadow-sm p-4 md:p-6 mb-10 flex flex-col md:flex-row gap-4 items-center justify-between sticky top-24 z-40"
       >
         <div class="flex flex-wrap gap-2 w-full md:w-auto">
-          <button
-            data-category="all"
-            class="filter-btn active"
-          >
-            همه
-          </button>
-          <button
-            data-category="coffee"
-            class="filter-btn"
-          >
-            قهوه
-          </button>
-          <button
-            data-category="instant"
-            class="filter-btn"
-          >
-            نسکافه
-          </button>
-          <button
-            data-category="tools"
-            class="filter-btn"
-          >
-            ابزارآلات
-          </button>
-          <button
-            data-category="desserts"
-            class="filter-btn"
-          >
-            دسر
-          </button>
+          <button data-category="all" class="filter-btn active">همه</button>
+          <button data-category="coffee" class="filter-btn">قهوه</button>
+          <button data-category="instant" class="filter-btn">نسکافه</button>
+          <button data-category="tools" class="filter-btn">ابزارآلات</button>
+          <button data-category="desserts" class="filter-btn">دسر</button>
         </div>
         <div
           class="relative w-full md:w-72 flex justify-center items-center border-2 border-white hover:border-coffee-cream transition-border duration-300 rounded-xl"
@@ -191,7 +166,11 @@
         id="products-grid"
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8"
       >
-        <div class="cart-product group flex flex-col" data-category="coffee" data-name="قهوه گریفون پاوا">
+        <div
+          class="cart-product group flex flex-col"
+          data-category="coffee"
+          data-name="قهوه گریفون پاوا"
+        >
           <div class="relative overflow-hidden aspect-square bg-white">
             <img
               src="./assets/images/images (9).jpg"
@@ -312,7 +291,11 @@
           </div>
         </div>
 
-        <div class="cart-product group flex flex-col" data-category="coffee" data-name="قهوه ترک">
+        <div
+          class="cart-product group flex flex-col"
+          data-category="coffee"
+          data-name="قهوه ترک"
+        >
           <div class="relative overflow-hidden aspect-square bg-white">
             <img
               src="./assets/images/tork_shokolati-300x300.jpg"
@@ -358,12 +341,16 @@
               d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
             />
           </svg>
-          <h3 class="text-xl font-bold text-coffee-dark mb-2">محصولی یافت نشد</h3>
-          <p class="text-coffee-caramel">لطفاً عبارت دیگری را جستجو کنید یا فیلتر را تغییر دهید.</p>
+          <h3 class="text-xl font-bold text-coffee-dark mb-2">
+            محصولی یافت نشد
+          </h3>
+          <p class="text-coffee-caramel">
+            لطفاً عبارت دیگری را جستجو کنید یا فیلتر را تغییر دهید.
+          </p>
         </div>
       </div>
     </main>
-        <footer class="w-full h-auto lg:h-[350px] bg-coffee-dark flex flex-col">
+    <footer class="w-full h-auto lg:h-[350px] bg-coffee-dark flex flex-col">
       <div
         class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:items-start lg:py-12"
       >
@@ -516,7 +503,7 @@
         <p>طراحی و توسعه با ❤️</p>
       </div>
     </footer>
-  <script src="./js/shop.js"></script>
-  <script src="./js/main.js"></script>
+    <script src="./js/shop.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -76,8 +76,32 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.20,
+      threshold: 0.2,
     },
   );
   revealElements.forEach((el) => revealObserver.observe(el));
+
+  //Dark Mode
+
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
+  const themeToggleLightIcon = document.getElementById(
+    "theme-toggle-light-icon",
+  );
+  if (themeToggleBtn) {
+    themeToggleDarkIcon.classList.remove("hidden");
+    themeToggleLightIcon.classList.add("hidden");
+    document.documentElement.classList.remove("dark");
+
+    themeToggleBtn.addEventListener("click", () => {
+      themeToggleDarkIcon.classList.toggle("hidden");
+      themeToggleLightIcon.classList.toggle("hidden");
+
+      if(document.documentElement.classList.contains("dark")){
+        document.documentElement.classList.remove("dark");
+      }else {
+        document.documentElement.classList.add("dark");
+      }
+    });
+  }
 });

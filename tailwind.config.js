@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.html", "./**/*.html", "./admin/*.html", "./js/**/*.js"],
+  darkMode : "class",
   theme: {
     extend: {
       // پالت های رنگی

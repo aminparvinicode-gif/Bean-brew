@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.2,
+      threshold: 0.20,
     },
   );
   revealElements.forEach((el) => revealObserver.observe(el));

@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: 0.20,
+      threshold: 0.2,
     },
   );
   revealElements.forEach((el) => revealObserver.observe(el));
@@ -97,11 +97,33 @@ document.addEventListener("DOMContentLoaded", () => {
       themeToggleDarkIcon.classList.toggle("hidden");
       themeToggleLightIcon.classList.toggle("hidden");
 
-      if(document.documentElement.classList.contains("dark")){
+      if (document.documentElement.classList.contains("dark")) {
         document.documentElement.classList.remove("dark");
-      }else {
+      } else {
         document.documentElement.classList.add("dark");
       }
+    });
+  }
+
+  const cartBadge = document.getElementById("cart-badge");
+
+  if (cartBadge) {
+    const cartIcon = cartBadge.parentElement;
+
+    const addToCartButtons = document.querySelectorAll(".btn-add-to-cart");
+
+    addToCartButtons.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault(); 
+        
+        cartIcon.classList.add("cart-pulse");
+        setTimeout(() => {
+          cartIcon.classList.remove("cart-pulse");
+        }, 500); 
+
+     
+        cartBadge.textContent = parseInt(cartBadge.textContent) + 1;
+      });
     });
   }
 });

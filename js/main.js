@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.getElementById("preloader");
+
+  if (preloader) {
+    setTimeout(() => {
+      preloader.classList.add("opacity-0");
+    }, 2000);
+  }
+
   const mobileMenuBtn = document.getElementById("mobile-menu-btn");
   const closeMenuBtn = document.getElementById("close-menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -114,14 +122,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     addToCartButtons.forEach((btn) => {
       btn.addEventListener("click", (e) => {
-        e.preventDefault(); 
-        
+        e.preventDefault();
+
         cartIcon.classList.add("cart-pulse");
         setTimeout(() => {
           cartIcon.classList.remove("cart-pulse");
-        }, 500); 
+        }, 500);
 
-     
         cartBadge.textContent = parseInt(cartBadge.textContent) + 1;
       });
     });
